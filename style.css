@@ -35,7 +35,7 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
     align-items: center;
 }
 
@@ -50,7 +50,7 @@ a{
     font-size: 1.6rem;
 }
 
-.header .menu-desktop{
+.header .menu-desktop-left, .menu-desktop-right{
     display: none;
 }
 
@@ -147,6 +147,10 @@ a{
     width: 100%;
 }
 
+.chooseTH-image-desktop{
+    display: none;
+}
+
 .coluna-cards{
     display: flex;
     flex-direction: column;
@@ -202,6 +206,7 @@ a{
     border-top-right-radius: 30px;
     padding: 4.5rem 1.7rem 2rem 1.7rem;
     color: var(--background-color);
+    margin-top: 9rem;
 }
 
 
@@ -293,7 +298,7 @@ a{
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 2rem;
+    gap: 2.5rem;
     font-weight: 300;
     justify-content: center;
 }
@@ -304,4 +309,189 @@ a{
 
 .row-fourth-footer .row span{
     color: #A0DA7A;
+}
+
+
+
+/* -------------------------------- */
+
+/* TABLET */
+@media (min-width: 768px){
+    .hero .hero-content-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero .hero-content-text p{
+        width: 70%;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero .hero-image{
+        width: 75%;
+    }
+    .video{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8rem;
+    }
+
+    .video .video-content-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video .video-content-text h3{
+        text-align: center;
+        font-size: 2.5rem;
+        width: 60%;
+    }
+
+    .video .video-image{
+        width: 75%;
+    }
+
+    .chooseTalentHive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6rem;
+        padding: 3rem 2rem;
+    }
+
+    .chooseTalentHive .chooseTH-content-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chooseTalentHive .chooseTH-content-text h3{
+        text-align: center;
+        font-size: 2.5rem;
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+
+    .chooseTalentHive .chooseTH-box{
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .chooseTH-image{
+        display: none;
+    }
+
+    .chooseTH-image-desktop{
+        display: block;  
+        max-width: 100%; 
+        padding: 3rem;  
+        padding-bottom: 0;
+    }
+
+    .chooseTH-image-desktop img{
+        width: 100%;
+    }
+
+    .chooseTalentHive .chooseTH-box{
+        margin: 1rem 2rem 0rem 2rem;
+        padding-right: 2rem;
+        padding-bottom: 0;
+    }
+
+    .coluna-cards{
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+        gap: 2rem;
+        height: 100%;
+        margin-top: 2rem;
+    }
+}
+
+
+/* ------------------------------ */
+
+/* Desktop */
+@media (min-width: 1024px){
+    .header{
+        padding: 0.5rem 2.5rem;
+    }
+
+    .header .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu-mobile{
+        display: none;
+    }
+
+    .header .menu-desktop-left, .menu-desktop-right{
+        display: flex;
+    }
+    
+
+    .header .menu-desktop-left ul, .header .menu-desktop-right ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .header .menu-desktop-left ul li a, .header .menu-desktop-right ul li a{
+        font-size: 0.95rem;
+        color: black;
+        transition: all 0.5s ease;
+        display: inline-block;
+    }
+
+    .header .menu-desktop-left ul li a:hover{
+        transform: scale(1.05);
+    }
+
+    .header .menu-desktop-right .Start-free{
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        padding: 0.8rem 1rem ;
+        border-radius: 25px;
+    }
+
+    .header .menu-desktop-right .Start-free:hover{
+        background-color: #2350ac;
+        transition: all 0.5s ease;
+    }
+
+    .hero .hero-content-text h2{
+        font-size: 5rem;
+        width:55%;
+    }
+
+    .hero .hero-content-text p{
+        width: 42%;
+    }
+
+    .video .video-content-text h3{
+        font-size: 4.5rem;
+    }
+
+    .chooseTalentHive .chooseTH-content-text h3{
+        font-size: 4rem;
+    }
+
 }
