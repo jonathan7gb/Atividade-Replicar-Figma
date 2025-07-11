@@ -136,12 +136,11 @@ a{
     align-items: center;
     margin: 1.5rem;
     border-radius: 15px;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1rem;
 }
 
 .chooseTH .chooseTH-image{
     max-width: 100%;
-    padding: 2.5rem 1.5rem 2rem 1.5rem; 
 }
 
 .chooseTH .chooseTH-image img{
@@ -155,13 +154,14 @@ a{
     justify-content: center;
     margin-top: 2rem;
     gap: 1rem;
+    margin-bottom: 3rem;
 }
 
 .coluna-cards .card h4{
     font-size: 0.9rem;
 }
 
-.coluna-cards .card-aberto .texto-card p{
+.coluna-cards .card-open .text-card-open p{
     font-size: 0.65rem;
     color: var(--text-muted);
     width: 75%;
@@ -169,14 +169,139 @@ a{
 }
 
 .coluna-cards .card{
-    display: flex;
-    justify-content: space-between;
     background-color: var(--background-color);
-    padding: 1rem 0.8rem;
     border-radius: 10px;
     width: 100%;
 }
 
+.text-card, .card-open{
+    display: flex;
+    justify-content: space-between;
+}
+
+.minus-card {
+    padding-right: 0.8rem;
+    padding-top: 0.1rem;
+}
+
+.coluna-cards .card .text-card, .text-card-open{
+    padding: 0.8rem 0.8rem;
+}
+
 .coluna-cards .card p{
     font-size: 1.2rem;
+}
+
+
+/* -------------------------------------- */
+
+/* FOOTER */
+.footer{
+    background-color: var(--primary-color);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 4.5rem 1.7rem 2rem 1.7rem;
+    color: var(--background-color);
+}
+
+
+/* First Section */
+.first-footer-section .text-ffs h2{
+    width: 70%;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.first-footer-section .text-ffs p{
+    width: 75%;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.first-footer-section .text-ffs .learn-more{
+    font-family: var(--font-family);
+    font-size: 1rem;
+    margin-bottom: 6rem;
+    color: black;
+    background-color: var(--background-color);
+    border: 0;
+    border-radius: 40px;
+    padding: 0.9rem 1.5rem;
+    font-weight: 600;
+}
+
+
+/* Second Section */
+
+
+.second-footer-section .sfs-columns{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.second-footer-section .sfs-columns .col1 {
+    width: 65%;
+}
+
+.second-footer-section .sfs-columns .col1 h3{
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 1.3rem;
+}
+
+.second-footer-section .sfs-columns .col1 p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 80%;
+}
+.second-footer-section .sfs-columns .col2{
+    margin-bottom: 5rem;
+}
+.second-footer-section .sfs-columns ul li{
+    margin-bottom: 1.5rem;
+}
+
+
+/* Third Section */
+.third-footer-section .column-third-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.third-footer-section .column-third-footer .col1{
+    font-weight: 500;
+}
+
+.col, .col1{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+
+/* Fourth Section */
+
+.row-fourth-footer{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    font-weight: 300;
+    justify-content: center;
+}
+
+.row-fourth-footer .row-special{
+    padding: 0 2rem;
+}
+
+.row-fourth-footer .row span{
+    color: #A0DA7A;
 }
