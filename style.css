@@ -1,1 +1,182 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+:root{
+    --background-color: #FFFFFF;
+    --primary-color: #3778FA;
+    --font-family: "Space Grotesk", sans-serif;
+    --text-muted: #555;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font-family);
+    letter-spacing: 1px;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* HEADER */
+.header{
+    max-width: 100%;
+}
+
+.header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    align-items: center;
+}
+
+.header .logo{
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.header .menu-mobile button{
+    background-color: transparent;
+    border: 0;
+    font-size: 1.6rem;
+}
+
+.header .menu-desktop{
+    display: none;
+}
+
+
+
+/* -------------------------------------- */
+
+/* MAIN */
+
+/* Hero */
+.hero{
+    max-width: 100%;
+}
+
+.hero .hero-content-text{
+    text-align: center;
+    margin-top: 4rem;
+    padding: 0 1.5rem;
+}
+
+.hero .hero-content-text h2{
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.hero .hero-content-text p{
+    font-size: 0.9rem;
+}
+
+.hero .hero-image{
+    max-width: 100%;
+    padding: 2rem 1.5rem ;
+}
+
+.hero .hero-image img{
+    width: 100%;
+}
+
+/* Video */
+.video{
+    max-width: 100%;
+    margin-top: 5rem;
+}
+
+.video .video-content-text{
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+.video .video-content-text h3{
+    font-size: 1.8rem;
+}
+
+.video .video-image{
+    max-width: 100%;
+    padding: 2rem 1.5rem ; 
+}
+
+.video .video-image img{
+    width: 100%;
+}
+
+/* Choose TalentHive */
+.chooseTalentHive{
+    max-width: 100%;
+    margin-top: 5rem;
+}
+
+.chooseTalentHive .chooseTH-content-text{
+    text-align: center;
+    padding: 0 4rem;
+}
+
+.chooseTalentHive .chooseTH-content-text h3{
+    font-size: 1.8rem;
+}
+
+.chooseTalentHive .chooseTH-box{
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+    border-radius: 15px;
+    padding: 2rem 1.5rem;
+}
+
+.chooseTH .chooseTH-image{
+    max-width: 100%;
+    padding: 2.5rem 1.5rem 2rem 1.5rem; 
+}
+
+.chooseTH .chooseTH-image img{
+    width: 100%;
+}
+
+.coluna-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.coluna-cards .card h4{
+    font-size: 0.9rem;
+}
+
+.coluna-cards .card-aberto .texto-card p{
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    width: 75%;
+    margin-top: 0.5rem;
+}
+
+.coluna-cards .card{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    padding: 1rem 0.8rem;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.coluna-cards .card p{
+    font-size: 1.2rem;
+}
