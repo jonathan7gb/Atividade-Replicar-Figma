@@ -277,7 +277,10 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .third-footer-section .column-third-footer .col1{
@@ -287,7 +290,13 @@ a{
 .col, .col1{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.col-desktop, .col1-desktop{
+    display: none;
 }
 
 
@@ -494,4 +503,85 @@ a{
         font-size: 4rem;
     }
 
+    .coluna-cards .card .text-card, .text-card-open{
+    padding: 1.5rem 1.5rem;
+    }
+
+    .coluna-cards .card .text-card h4, .coluna-cards .card .text-card-open h4{
+        font-size: 1.2rem;
+    }
+
+    .coluna-cards .card .text-card-open p{
+        font-size: 1rem;
+    }
+    .coluna-cards .card .text-card-open .minus-card{
+        font-size: 1.2rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin: 0;
+    }
+
+    .first-footer-section{
+        margin-bottom: 8rem;
+    }
+
+    .first-footer-section .text-ffs{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-footer-section .text-ffs .title-text-ffs h2{
+        font-size: 7rem;
+        width: 60%;
+        padding-left: 8rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .first-footer-section .text-ffs .button-and-text-ffs{
+        width: 50%;
+    }
+
+    .container-second-third-section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .column-third-footer{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .row-fourth-footer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .col1-desktop, .col-desktop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+    }
+
+    .third-footer-section{
+        display: none;
+    }
+
+    .sfs-columns .col2 ul   {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sfs-columns .col2, .sfs-columns .col2 ul li {
+        margin: 0;
+    }
 }
