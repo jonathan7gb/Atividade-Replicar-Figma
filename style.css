@@ -166,7 +166,7 @@ a{
 }
 
 .coluna-cards .card-open .text-card-open p{
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     color: var(--text-muted);
     width: 75%;
     margin-top: 0.5rem;
@@ -178,8 +178,9 @@ a{
     width: 100%;
 }
 
-.text-card, .card-open{
+.text-card h4,.text-card-open h4{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -437,17 +438,11 @@ a{
 
 /* Desktop */
 @media (min-width: 1024px){
-    .header{
-        padding: 0.5rem 2.5rem;
-    }
 
-    .header .container{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+    .header .container {
+        margin: 1rem 2.5rem;
     }
-    .menu-mobile{
+    .navbar-mobile, .menu-mobile{
         display: none;
     }
 
@@ -455,22 +450,24 @@ a{
         display: flex;
     }
     
+    #linkLogin{
+        font-weight: 600;
+    }
 
     .header .menu-desktop-left ul, .header .menu-desktop-right ul{
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 1rem;
+        gap: 2.5rem;
     }
 
     .header .menu-desktop-left ul li a, .header .menu-desktop-right ul li a{
-        font-size: 0.95rem;
+        font-size: 1rem;
         color: black;
         transition: all 0.5s ease;
-        display: inline-block;
     }
 
-    .header .menu-desktop-left ul li a:hover{
+    .header .menu-desktop-left ul li:hover{
         transform: scale(1.05);
     }
 
@@ -504,16 +501,20 @@ a{
     }
 
     .coluna-cards .card .text-card, .text-card-open{
-    padding: 1.5rem 1.5rem;
+     padding: 1.5rem 1.5rem;
     }
 
     .coluna-cards .card .text-card h4, .coluna-cards .card .text-card-open h4{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .coluna-cards .card .text-card-open p{
         font-size: 1rem;
+        width: 45%;
+        line-height: 1.5;
+        text-align: justify;
     }
+
     .coluna-cards .card .text-card-open .minus-card{
         font-size: 1.2rem;
         padding: 0;
@@ -524,6 +525,10 @@ a{
         margin: 0;
     }
 
+
+    .container-footer{
+        margin-bottom: 1.5rem;
+    }
     .first-footer-section{
         margin-bottom: 8rem;
     }
@@ -533,6 +538,10 @@ a{
         flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+
+    .first-footer-section .text-ffs p{
+        font-size: 1.2rem;
     }
 
     .first-footer-section .text-ffs .title-text-ffs h2{
@@ -572,6 +581,11 @@ a{
     
     .second-footer-section .text-sfs{
         margin: 10rem 5rem;
+    }
+
+    .second-footer-section .text-sfs .col1 p{
+        font-size: 1.1rem;
+        width: 95%;
     }
 
     .sfs-columns .col2 ul   {
