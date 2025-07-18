@@ -35,5 +35,8 @@ Link do Figma utilizado para replicar: https://www.figma.com/design/aqSgZ9jU2OD9
 2. Acesse a pasta do projeto e abra o arquivo `index.html` no seu navegador.
 
 ---
-<br>
+
+## Estruturação de Pastas e Arquivos da Atividade
+<img width="368" height="338" alt="image" src="https://github.com/user-attachments/assets/b175f333-848a-4660-9b1d-f9224769432f" />
+
 
