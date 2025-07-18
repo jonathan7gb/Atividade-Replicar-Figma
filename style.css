@@ -262,6 +262,8 @@ a{
     margin-top: 6rem;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .second-footer-section .sfs-columns .col1 {
@@ -271,7 +273,7 @@ a{
 .second-footer-section .sfs-columns .col1 h3{
     font-weight: 400;
     font-size: 1.4rem;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1rem;
 }
 
 .second-footer-section .sfs-columns .col1 p{
@@ -280,11 +282,15 @@ a{
     line-height: 1.5;
     width: 80%;
 }
-.second-footer-section .sfs-columns .col2{
-    margin-bottom: 5rem;
+.second-footer-section .sfs-columns .col2 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 .second-footer-section .sfs-columns ul li{
-    margin-bottom: 1.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
 }
 
 
@@ -316,6 +322,7 @@ a{
 .col-desktop, .col1-desktop{
     display: none;
 }
+
 
 
 /* Fourth Section */
