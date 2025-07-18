@@ -26,7 +26,10 @@ a{
     text-decoration: none;
 }
 
+
 /* HEADER */
+
+
 .header{
     max-width: 100%;
 }
@@ -58,9 +61,12 @@ a{
 
 /* -------------------------------------- */
 
+
 /* MAIN */
 
+
 /* Hero */
+
 .hero{
     max-width: 100%;
 }
@@ -89,7 +95,10 @@ a{
     width: 100%;
 }
 
+
 /* Video */
+
+
 .video{
     max-width: 100%;
     margin-top: 5rem;
@@ -113,7 +122,10 @@ a{
     width: 100%;
 }
 
+
 /* Choose TalentHive */
+
+
 .chooseTalentHive{
     max-width: 100%;
     margin-top: 5rem;
@@ -201,6 +213,7 @@ a{
 /* -------------------------------------- */
 
 /* FOOTER */
+
 .footer{
     background-color: var(--primary-color);
     border-top-left-radius: 30px;
@@ -212,6 +225,8 @@ a{
 
 
 /* First Section */
+
+
 .first-footer-section .text-ffs h2{
     width: 70%;
     font-size: 3rem;
@@ -274,6 +289,8 @@ a{
 
 
 /* Third Section */
+
+
 .third-footer-section .column-third-footer{
     display: flex;
     flex-direction: row;
@@ -303,6 +320,7 @@ a{
 
 /* Fourth Section */
 
+
 .row-fourth-footer{
     margin-top: 6rem;
     display: flex;
@@ -325,8 +343,13 @@ a{
 
 /* -------------------------------- */
 
+
+
 /* TABLET */
 @media (min-width: 768px){
+
+    /* MAIN */
+
     .hero .hero-content-text{
         display: flex;
         flex-direction: column;
@@ -345,9 +368,11 @@ a{
         justify-content: center;
         align-items: center;
     }
+
     .hero .hero-image{
         width: 75%;
     }
+
     .video{
         display: flex;
         flex-direction: column;
@@ -434,11 +459,17 @@ a{
 }
 
 
+
+
 /* ------------------------------ */
+
+
+
 
 /* Desktop */
 @media (min-width: 1024px){
 
+    /* HEADER */
     .header .container {
         margin: 1rem 2.5rem;
     }
@@ -483,6 +514,10 @@ a{
         transition: all 0.5s ease;
     }
 
+    /* -------------------------------------- */
+
+    /* MAIN */
+
     .hero .hero-content-text h2{
         font-size: 5rem;
         width:55%;
@@ -525,6 +560,9 @@ a{
         margin: 0;
     }
 
+     /* -------------------------------------- */
+
+    /* FOOTER */
 
     .container-footer{
         margin-bottom: 1.5rem;
@@ -618,5 +656,5 @@ a{
     font-weight: 500;
     font-size: 2rem;
     margin-bottom: 0.5rem;
-}
+    }
 }
